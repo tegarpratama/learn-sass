@@ -1,0 +1,21 @@
+$primary-color: blue;
+$secondary-color: green;
+
+body {
+  background-color: $primary-color;
+}
+
+h1 {
+  color: $secondary-color;
+}
+
+// Map
+$alert: (
+  "danger": red,
+  "success": green,
+  "warning": orange,
+);
+
+h1 {
+  color: map-get($alert, "success");
+}
